@@ -34,11 +34,26 @@ Run each cell in order. The model parameters are set to run example network mode
 
 #### Expected output: 
 All accuracy of classifier are saved at each time point. Accuracy is measured by AUC or area under the curve. Values above .5 indicate accurate performance. 
-A/X sensory classifier should perform well during the first time point (tp). 
-C/C* sensory classifier should perform well during the second time point (tp). 
-When Association levels are high, A/X sensory classifier should fail during unexpected trials at time point 2. However, A/X memory classifier should perform well on these trials. 
+
+A/X Sensory and Memory classifiers should perform well during the first and second time points.
 
 For example: 
+
+```
+AX AUC per tp: [0.906425 0.733425]
+```
+
+C/C* sensory classifier should perform well during the second time point (tp) only. 
+
+For example:
+
+```
+CCprime AUC per tp: [0.489225 0.865125]
+```
+
+When Association levels are high, A/X sensory classifier should fail during unexpected trials at time point 2. However, A/X memory classifier should perform well on these trials. 
+
+Full network output example: 
 
 ```
 New Run - p_index: 5 run: 0
