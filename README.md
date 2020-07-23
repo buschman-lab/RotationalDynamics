@@ -2,7 +2,7 @@
 
 ## Neural Network Model of Rotational Dynamics
 
-The neural network model was designed to simulate observed dynamics in auditory cortex during associative learning. The same analyses applied to the neural data are applied here. For each model run, classifiers are trained, z-scored firing rate differences and neuron selectivity counts are calculated.
+The neural network model was designed to simulate observed dynamics in auditory cortex during associative learning. The same analyses applied to the neural data are applied here. For each model run, classifiers are trained and trial data is projected on to the classifiers. Additionally, z-scored firing rate differences and neuron selectivity counts are calculated per model run across the population. 
 
 ### Software
 
