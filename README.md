@@ -11,7 +11,7 @@ Python 3.7
 jupyter notebook (for demo)
 
 #### packages
-numpy 1.16.2, torch 1.0.1, sklearn 0.21.1, scipy 1.2.1
+numpy 1.16.2, torch 1.0.1, sklearn 0.21.1 (version 0.19 or later), scipy 1.2.1
 
 ### Installing
 
@@ -30,7 +30,27 @@ Choose network parameters - defaults match paper
 #### Notebook: Model Demo 2020
 
 Ensure all helper .py files are in the same folder as the notebook. 
-Run each cell in order. The model parameters are set to run example network models with a range of parameters for the level of association and levels of structure in the rotation. 
+Run each cell in order. The model parameters are set to run example network models with a range of parameters for the level of association and levels of structure in the rotation. Expected time to run - 10-20 minutes. 
+
+#### Expected output: 
+All accuracy of classifier are saved at each time point. Accuracy is measured by AUC or area under the curve. Values above .5 indicate accurate performance. 
+A/X sensory classifier should perform well during the first time point (tp). 
+C/C* sensory classifier should perform well during the second time point (tp). 
+When Association levels are high, A/X sensory classifier should fail during unexpected trials at time point 2. However, A/X memory classifier should perform well on these trials. 
+
+For example: 
+
+```
+New Run - p_index: 5 run: 0
+current association level 0.95
+current level of structure in rotation 0.49889135254988914
+
+
+AX AUC per tp: [0.906425 0.733425]
+CCprime AUC per tp: [0.489225 0.865125]
+A/X Sensory AUC on Unexpected trials: 0.33799999999999997
+A/X Memory AUC on Unexpected trials: 0.7418
+```
 
 ## License
 
