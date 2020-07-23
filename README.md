@@ -15,7 +15,7 @@ numpy 1.16.2, torch 1.0.1, sklearn 0.21.1 (version 0.19 or later), scipy 1.2.1
 
 ### Installing
 
-Download files and place script/notebook(s) into the same folder as helper functions. 
+[Install python 3.7](https://wiki.python.org/moin/BeginnersGuide) and necessary packages (listed above). Then download files and place script/notebook(s) into the same folder as helper functions. Install time for python, dependencies, and files is about 30 minutes to 2 hours.
 
 ### Running Model
 
@@ -30,7 +30,7 @@ Choose network parameters - defaults match paper
 #### Notebook: Model Demo 2020
 
 Ensure all helper .py files are in the same folder as the notebook. 
-Run each cell in order. The model parameters are set to run example network models with a range of parameters for the level of association and levels of structure in the rotation. Expected time to run - 10-20 minutes. 
+Run each cell in order. The model parameters are set to run example network models with a range of parameters for the level of association and levels of structure in the rotation. Expected time to run is 5-20 minutes. 
 
 #### Expected output: 
 All accuracy of classifier are saved at each time point. Accuracy is measured by AUC or area under the curve. Values above .5 indicate accurate performance. 
